@@ -14,31 +14,31 @@ def is_enabled(value, default):
         return default
 
 SESSION = environ.get('SESSION', 'techifybots')
-API_ID = int(environ.get('API_ID', ''))
-API_HASH = environ.get('API_HASH', '')
-BOT_TOKEN = environ.get('BOT_TOKEN', "")
+API_ID = int(environ.get('API_ID', '39134569'))
+API_HASH = environ.get('API_HASH', '4e901df1ec6ca3f0717777b65a4b72c3')
+BOT_TOKEN = environ.get('BOT_TOKEN', "8295619317:AAG0HIbPklJi2W3LXV-GA5iB3eypvH8SJe8")
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
 INDEX_CAPTION = bool(environ.get('INDEX_CAPTION', False))
 COVER = bool(environ.get('COVER', False))
 PICS = (environ.get('PICS', 'https://i.ibb.co/PzZNZHF6/IMG-20251116-113905-254.jpg https://i.ibb.co/8npWSZ5T/pic.jpg')).split()
 MELCOW_PHOTO = environ.get("MELCOW_PHOTO", "https://i.ibb.co/2769f1rF/photo-2025-09-03-14-48-34-7548400762112442372.jpg")
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1255023013').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '7643842600').split()]
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '').split()]
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ''))
-BIN_CHANNEL = int(environ.get('BIN_CHANNEL', ''))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1003822009674'))
+BIN_CHANNEL = int(environ.get('BIN_CHANNEL', '-1003830567909'))
 PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', ''))
-DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '').split()]
+DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '-1003804461955').split()]
 AUTH_CHANNELS = [int(ch) for ch in environ.get("AUTH_CHANNELS", "").split() if ch and id_pattern.match(ch)]
 AUTH_REQ_CHANNELS = [int(ch) for ch in environ.get("AUTH_REQ_CHANNELS", "").split() if ch and id_pattern.match(ch)]
 REQST_CHANNEL = int(ch) if (ch := environ.get("REQST_CHANNEL", "")) and id_pattern.search(ch) else None
-SUPPORT_CHAT_ID = int(ch) if (ch := environ.get("SUPPORT_CHAT_ID", "")) and id_pattern.search(ch) else None
+SUPPORT_CHAT_ID = int(ch) if (ch := environ.get("SUPPORT_CHAT_ID", "-1003702661625")) and id_pattern.search(ch) else None
 
-OWNER = int(os.environ.get("OWNER", "1255023013"))
-CHANNEL_LINK = environ.get('CHANNEL_LINK', 'https://telegram.me/Techifybots')
-GROUP_LINK = environ.get('GROUP_LINK', 'https://telegram.me/TechifySupport')
+OWNER = int(os.environ.get("OWNER", "7643842600"))
+CHANNEL_LINK = environ.get('CHANNEL_LINK', 'https://t.me/sZDjUYNcVuM2MWY9')
+GROUP_LINK = environ.get('GROUP_LINK', 'https://t.me/kannada_movres_x444')
 
-DATABASE_URI = environ.get('DATABASE_URI', "")
-DATABASE_NAME = environ.get('DATABASE_NAME', "filter")
+DATABASE_URI = environ.get('DATABASE_URI', "URI=mongodb+srv://Kannada_Movie:8792234103@newmoviebot.putozli.mongodb.net/?appName=newmoviebot")
+DATABASE_NAME = environ.get('DATABASE_NAME', "newmoviebot")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'files')
 MULTIPLE_DB = is_enabled(os.environ.get('MULTIPLE_DB', "False"), False)
 DATABASE_URI2 = environ.get('DATABASE_URI2', "")
@@ -55,15 +55,15 @@ LANDSCAPE_POSTER = bool(environ.get('LANDSCAPE_POSTER', True))
 IS_VERIFY = is_enabled('IS_VERIFY', False)
 LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', ''))
 VERIFY_IMG = environ.get("VERIFY_IMG", "https://i.ibb.co/xqNtSMpS/photo-2025-09-18-15-24-38-7551450511015149572.jpg")
-TUTORIAL = environ.get("TUTORIAL", "https://t.me/TechifyBots")
-TUTORIAL_2 = environ.get("TUTORIAL_2", "https://t.me/TechifyBots")
-TUTORIAL_3 = environ.get("TUTORIAL_3", "https://t.me/TechifyBots")
-SHORTENER_API = environ.get("SHORTENER_API", "a7ac9b3012c67d7491414cf272d82593c75f6cbb")
-SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", "omegalinks.in")
-SHORTENER_API2 = environ.get("SHORTENER_API2", "a7ac9b3012c67d7491414cf272d82593c75f6cbb")
-SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", "omegalinks.in")
-SHORTENER_API3 = environ.get("SHORTENER_API3", "a7ac9b3012c67d7491414cf272d82593c75f6cbb")
-SHORTENER_WEBSITE3 = environ.get("SHORTENER_WEBSITE3", "omegalinks.in")
+TUTORIAL = environ.get("TUTORIAL", "https://t.me/+MUo5Ll1XHOUyZWRl")
+TUTORIAL_2 = environ.get("TUTORIAL_2", "https://t.me/+MUo5Ll1XHOUyZWRl")
+TUTORIAL_3 = environ.get("TUTORIAL_3", "https://t.me/+MUo5Ll1XHOUyZWRl")
+SHORTENER_API = environ.get("SHORTENER_API", "4b1f3f4727149030af0795b3c8d03e1e1fa609c6")
+SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", "https://arolinks.com")
+SHORTENER_API2 = environ.get("SHORTENER_API2", "4b1f3f4727149030af0795b3c8d03e1e1fa609c6")
+SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", "https://arolinks.com")
+SHORTENER_API3 = environ.get("SHORTENER_API3", "4b1f3f4727149030af0795b3c8d03e1e1fa609c6")
+SHORTENER_WEBSITE3 = environ.get("SHORTENER_WEBSITE3", "https://arolinks.com🥰")
 TWO_VERIFY_GAP = int(environ.get('TWO_VERIFY_GAP', "1200"))
 THREE_VERIFY_GAP = int(environ.get('THREE_VERIFY_GAP', "54000"))
 
